@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_dark"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvNoUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NO MAJOR ORDERS AT THIS TIME. STAND BY."
+        android:textColor="@color/primary_yellow"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:visibility="gone" /> ```
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMissions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

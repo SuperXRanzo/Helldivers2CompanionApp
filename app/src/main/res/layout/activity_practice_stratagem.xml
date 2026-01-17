@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#121212"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvStratagemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REINFORCE"
+        android:textColor="#FFFF00"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSequence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="U D R L U"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvInputFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input sequence..."
+        android:textColor="#888888"
+        android:layout_marginTop="8dp" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:columnCount="3">
+
+        <View android:layout_width="60dp" android:layout_height="60dp"/>
+        <Button android:id="@+id/btnUp" android:layout_width="80dp" android:layout_height="80dp" android:text="▲"/>
+        <View android:layout_width="60dp" android:layout_height="60dp"/>
+
+        <Button android:id="@+id/btnLeft" android:layout_width="80dp" android:layout_height="80dp" android:text="◀"/>
+        <Button android:id="@+id/btnDown" android:layout_width="80dp" android:layout_height="80dp" android:text="▼"/>
+        <Button android:id="@+id/btnRight" android:layout_width="80dp" android:layout_height="80dp" android:text="▶"/>
+
+    </GridLayout>
+
+</LinearLayout>

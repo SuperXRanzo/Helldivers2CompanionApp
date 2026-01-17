@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardBackgroundColor="#1E1E1E"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvLoadoutName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bug Smasher"
+            android:textColor="@color/primary_yellow"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#333333"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvWeapons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Primary: Breaker | Sec: Redeemer"
+            android:textColor="#DDDDDD"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvStratagems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stratagems: Railgun, Shield Pack, Eagle Airstrike, Orbital Laser"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif-condensed"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

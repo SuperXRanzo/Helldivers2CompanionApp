@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update War Status"
+            android:textColor="@color/primary_yellow"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Planet"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:layout_marginStart="4dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerPlanets"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/text_secondary"
+            style="@style/Widget.AppCompat.Spinner.Underlined"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Liberation Progress (%)"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:layout_marginStart="4dp"/>
+
+        <EditText
+            android:id="@+id/etProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/text_secondary"
+            android:layout_marginBottom="32dp"
+            android:paddingBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnUpdateProgress"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="UPDATE STATUS"
+            android:backgroundTint="@color/primary_yellow"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:elevation="4dp"/>
+
+    </LinearLayout>
+</ScrollView>

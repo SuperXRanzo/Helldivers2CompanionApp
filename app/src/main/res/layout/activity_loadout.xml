@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:fillViewport="true"
+    tools:context=".ui.player.LoadoutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CREATE CUSTOM LOADOUT"
+            android:textColor="@color/primary_yellow"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/etLoadoutName"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Loadout Name (e.g. Bug Smasher)"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:backgroundTint="@color/primary_yellow"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRIMARY WEAPON"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"/>
+
+        <Spinner
+            android:id="@+id/spPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#333333"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SECONDARY WEAPON"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"/>
+
+        <Spinner
+            android:id="@+id/spSecondary"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#333333"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STRATAGEM SLOTS"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"/>
+
+        <Spinner
+            android:id="@+id/spStrat1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:background="#333333"/>
+
+        <Spinner
+            android:id="@+id/spStrat2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="#333333"/>
+
+        <Spinner
+            android:id="@+id/spStrat3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="#333333"/>
+
+        <Spinner
+            android:id="@+id/spStrat4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="24dp"
+            android:background="#333333"/>
+
+        <Button
+            android:id="@+id/btnSaveLoadout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="SAVE LOADOUT"
+            android:backgroundTint="@color/primary_yellow"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MY SAVED LOADOUTS"
+            android:textColor="@color/primary_yellow"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvLoadouts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            tools:listitem="@layout/item_loadout"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_dark"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WAR ANALYTICS"
+        android:textColor="@color/primary_yellow"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Helldivers Deployed:"
+        android:textColor="#E0E0E0" />
+    <TextView
+        android:id="@+id/tvTotalHelldivers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/primary_yellow"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Enemy Kills:"
+        android:textColor="#E0E0E0" />
+    <TextView
+        android:id="@+id/tvTotalKills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#FF5252"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Casualties (Deaths):"
+        android:textColor="#E0E0E0" />
+    <TextView
+        android:id="@+id/tvTotalDeaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#B0BEC5"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mission Success Rate:"
+        android:textColor="#E0E0E0" />
+    <TextView
+        android:id="@+id/tvSuccessRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:textColor="#69F0AE"
+        android:textSize="32sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
